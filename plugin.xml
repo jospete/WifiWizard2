@@ -58,13 +58,14 @@
         <config-file parent="com.apple.developer.networking.HotspotConfiguration" target="*/Entitlements-Release.plist">
                  <true/>
         </config-file>
-        <config-file parent="com.apple.developer.networking.networkextension" target="*/Entitlements-Debug.plist">
-                <array/>
-        </config-file>
-        <config-file parent="com.apple.developer.networking.networkextension" target="*/Entitlements-Release.plist">
-                <array/>
-        </config-file>
-	<config-file parent="com.apple.developer.networking.wifi-info" target="*/Entitlements-Debug.plist">
+<!-- These declarations break xcode uploads as of Xcode Version 12.3 (12C33) -->
+<!--        <config-file parent="com.apple.developer.networking.networkextension" target="*/Entitlements-Debug.plist">-->
+<!--                <array/>-->
+<!--        </config-file>-->
+<!--        <config-file parent="com.apple.developer.networking.networkextension" target="*/Entitlements-Release.plist">-->
+<!--                <array/>-->
+<!--        </config-file>-->
+	    <config-file parent="com.apple.developer.networking.wifi-info" target="*/Entitlements-Debug.plist">
                 <true/>
         </config-file>
         <config-file parent="com.apple.developer.networking.wifi-info" target="*/Entitlements-Release.plist">
